@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:globo_fitness/screens/intro_screen.dart';
 
 void main() {
   runApp(GlobeApp());
@@ -10,10 +11,8 @@ class GlobeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-            appBar: AppBar(title: Text('Globo Fitness')),
-            body: Center(
-                child: Text(
-                    'Commit to be fit , dare to be great with Globo Fitness'))));
+      theme: ThemeData(primarySwatch: Colors.blueGrey),
+        home: IntroScreen()
+    );
   }
 }
